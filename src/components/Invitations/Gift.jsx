@@ -27,9 +27,10 @@ const Gift = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl text-[#444337] "
+            className="text-2xl sm:text-3xl text-[#444337] "
           >
-            Share <span className="alex text-5xl text-[#bfa95b]">Love</span>
+            Share{" "}
+            <span className="text-3xl sm:text-4xl text-[#bfa95b]">Love</span>
           </motion.h3>
           <motion.p
             initial={{ y: 40, opacity: 0 }}
@@ -59,7 +60,7 @@ const Gift = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: 0.1 }}
-              className="text-[#444337] text-md  tracking-wider"
+              className="text-[#444337] text-lg sm:text-xl  tracking-wider"
             >
               BANK BCA
             </motion.p>
@@ -68,7 +69,7 @@ const Gift = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="text-[#444337] text-xl my-3 tracking-wider"
+              className="text-[#444337] text-lg sm:text-xl my-3 tracking-wider"
             >
               M.Fauzan Hafidzin
             </motion.p>
@@ -77,7 +78,7 @@ const Gift = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-[#444337] text-xl  tracking-widest"
+              className="text-[#444337] text-lg sm:text-xl  tracking-wider"
             >
               12345678
             </motion.p>

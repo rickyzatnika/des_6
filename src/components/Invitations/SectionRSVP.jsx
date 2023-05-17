@@ -161,27 +161,27 @@ const SectionRSVP = ({ guest }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-full items-center py-0 lg:py-20 justify-center  min-h-screen bg-black/70 top-0 bottom-0 left-0 right-0 z-50 fixed overflow-hidden"
+              className="w-full items-center py-0 lg:py-20 justify-center  min-h-screen bg-gradient-to-t from-black top-0 bottom-0 left-0 right-0 z-50 fixed overflow-hidden"
             >
               <motion.div
                 initial={{ y: -80 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="py-10 rounded-t-[35px] px-2 bg-zinc-100 relative top-20 shadow-xl shadow-[#727251]/60  w-[90%] md:w-[50%] mx-auto "
+                className="py-10 rounded-t-[50px] px-1 bg-zinc-100 relative top-20 shadow-xl shadow-[#181813]/20  w-[95%] md:w-[50%] mx-auto "
               >
-                <div className="pt-2 lg:pt-14 w-full  mx-auto px-2">
-                  <div className="w-full lg:w-5/6 mx-auto   pb-6">
-                    <h3 className="text-2xl lg:text-3xl text-[#444337]">
+                <div className="pt-2 lg:pt-14 w-full  mx-auto px-1">
+                  <div className="w-full sm:w-5/6 mx-auto pb-6">
+                    <h3 className="text-xl sm:text-3xl text-[#444337]">
                       Konfirmasi
                     </h3>{" "}
-                    <span className="alex text-4xl text-[#bfa95b]">
+                    <span className="text-2xl sm:text-2xl text-[#bfa95b]">
                       kehadiran
                     </span>
                     <div className="w-24 h-[2px] absolute top-20 right-8 bg-[#bfa95b] " />
                   </div>
                   <form
                     onSubmit={handleSubmit(attendForm)}
-                    className="w-full rounded z-50 h-auto px-2 lg:px-20 flex flex-col items-start justify-between gap-3"
+                    className="w-full rounded z-50 h-auto px-1 lg:px-20 flex flex-col items-start justify-between gap-3"
                   >
                     <div className="w-full leading-relaxed mb-3 px-3">
                       <div className="flex flex-col flex-nowrap gap-2">
@@ -194,7 +194,7 @@ const SectionRSVP = ({ guest }) => {
                             onChange={() => handleClick("going")}
                           />
                           <label
-                            className="text-[#444337] text-lg lg:text-xl"
+                            className="text-[#444337] text-md sm:text-lg"
                             onClick={(e) => {
                               e.preventDefault();
                               handleClick("going");
@@ -216,7 +216,7 @@ const SectionRSVP = ({ guest }) => {
                               e.preventDefault();
                               handleClick("not Going");
                             }}
-                            className="text-[#444337] text-lg lg:text-xl"
+                            className="text-[#444337] text-md sm:text-lg"
                           >
                             Maaf, tidak bisa hadir
                           </label>
@@ -225,13 +225,14 @@ const SectionRSVP = ({ guest }) => {
                     </div>
                     {!selectedValue && (
                       <div className="mb-3 w-full">
-                        <h3 className="mb-2 text-md text-[#444337]">
+                        <h3 className="mb-3 text-sm sm:text-lg text-[#444337]">
                           Berapa orang yang akan hadir :
                         </h3>
                         <select
-                          className="w-full text-[#444337] py-3 px-2 border-none outline-none rounded focus:outline-[#9c8450]"
+                          className="w-full text-sm sm:text-lg text-[#444337] py-2 px-2 border-none outline-none rounded focus:outline-[#9c8450]"
                           {...register("present", { required: true })}
                         >
+                          <option style={{ display: "none" }}>pilih</option>
                           <option value="1">1 Orang</option>
                           <option value="2">2 Orang</option>
                           <option value="3">3 Orang</option>
@@ -241,13 +242,14 @@ const SectionRSVP = ({ guest }) => {
 
                     {selectedValue === "going" && (
                       <div className="mb-3 w-full">
-                        <h3 className="mb-2 text-md text-[#444337]">
+                        <h3 className="mb-3 text-sm sm:text-lg  text-[#444337]">
                           Berapa orang yang akan hadir :
                         </h3>
                         <select
-                          className="w-full text-[#444337] py-3 px-2 border-none outline-none rounded focus:outline-[#9c8450]"
+                          className="w-full text-sm sm:text-lg text-[#444337] py-2 px-2 border-none outline-none rounded focus:outline-[#9c8450]"
                           {...register("present", { required: true })}
                         >
+                          <option style={{ display: "none" }}>pilih</option>
                           <option value="1">1 Orang</option>
                           <option value="2">2 Orang</option>
                           <option value="3">3 Orang</option>

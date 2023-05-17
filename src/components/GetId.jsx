@@ -57,7 +57,7 @@ const GetId = () => {
         />
         <div className="w-full min-h-screen bg-gradient-to-t mix-blend-overlay from-black/80 to-transparent absolute top-0 -z-40" />
         <AnimatedPage>
-          <div className="w-full lg:w-3/6 overflow-hidden rounded-xl z-50 relative shadow-lg shadow-zinc-800 bg-[#000000]/50  flex flex-col items-center gap-5 py-10 justify-center ">
+          <div className="w-full lg:w-3/6 overflow-hidden rounded-xl z-50 relative shadow-lg shadow-zinc-800 bg-[#000000]/50  flex flex-col items-center gap-2 sm:gap-5 py-10 justify-center ">
             <h1 className="text-md py-1  tracking-wider rounded-xl w-fit px-5 text-center bg-zinc-200/90 backdrop-blur  text-[#4e3a03] ">
               Wedding Invitation
             </h1>
@@ -73,10 +73,10 @@ const GetId = () => {
             </div>
 
             <div className="text-center pt-2 leading-relaxed ">
-              <p className="text-zinc-300">
+              <p className="text-zinc-300 text-sm sm:text-md">
                 Kepada Yth, <br /> Bapak/Ibu/Saudara/i
               </p>{" "}
-              <p className="capitalize tracking-wide text-xl py-4 font-sans text-[#dddddd]">
+              <p className="capitalize tracking-wide tex-md sm:text-lg py-4 font-sans text-[#dddddd]">
                 {guest?.name}
               </p>
             </div>

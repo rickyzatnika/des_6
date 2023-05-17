@@ -34,10 +34,8 @@ const SectionTwo = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="mt-3"
           >
-            <h3 className=" text-3xl sm:text-4xl md:text-6xl text-[#bfa95b]">
-              Wedding
-            </h3>
-            <span className="alex text-5xl text-[#444337]">Event</span>
+            <h3 className=" text-2xl sm:text-3xl text-[#bfa95b]">Wedding</h3>
+            <span className="text-3xl sm:text-4xl text-[#444337]">Event</span>
           </motion.div>
           <motion.div
             initial={{ y: 30, opacity: 0 }}
@@ -67,7 +65,7 @@ const SectionTwo = () => {
             className="w-full  py-4 flex flex-col text-center items-center justify-center gap-5 lg:justify-around pt-8"
           >
             <div className="w-fit p-6 border-b-0 rounded-3xl border-2 border-[#968548]  flex gap-4 flex-col items-center justify-center">
-              <h3 className="text-3xl text-[#444337] ">
+              <h3 className="text-xl sm:text-2xl text-[#444337] ">
                 Akad <span>Nikah</span>
               </h3>
               <div className="text-[#727251] text-sm text-center ">
@@ -87,7 +85,7 @@ const SectionTwo = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="w-fit  p-6 border-t-0 rounded-3xl border-2 border-[#968548]  mx-auto flex flex-col gap-4 mb-12 items-center justify-center "
         >
-          <h3 className="text-3xl text-[#444337]">Resepsi</h3>
+          <h3 className="text-xl sm:text-2xl text-[#444337]">Resepsi</h3>
           <div className="text-[#727251] text-sm text-center">
             <h3>Rabu</h3>
             <span className="alex text-4xl">23</span> <h3>Agustus</h3>

@@ -44,9 +44,9 @@ export default function CountDownTimer({ ...props }) {
       <div className="w-full relative px-2 h-full py-10 flex flex-col item-center justify-center gap-2 lg:gap-4">
         <div className="w-full gap-4 flex flex-col items-center justify-center h-full">
           <div className="flex gap-4 flex-row">
-            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg bg-gradient-to-tr w-40 h-40 from-zinc-50 to-zinc-200 overflow-hidden  clip">
+            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg bg-gradient-to-tr w-32 sm:w-40 h-32 sm:h-40 from-zinc-50 to-zinc-200 overflow-hidden  clip">
               {/* Timer Days */}
-              <div className=" text-6xl sm:text-5xl m-auto font-bold flex items-center justify-center">
+              <div className=" text-4xl sm:text-5xl m-auto font-bold flex items-center justify-center">
                 <span className="text-[#444337]">{timerDays}</span>
               </div>
               <small className="w-full  text-center text-zinc-900/80 font-semibold text-xl">
@@ -54,10 +54,10 @@ export default function CountDownTimer({ ...props }) {
               </small>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-1 sm:gap-3">
             {/* Timer Hours */}
-            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-28  h-28  from-zinc-50 to-zinc-200 overflow-hidden  clip">
-              <div className=" text-3xl sm:text-5xl m-auto font-bold flex items-center justify-center">
+            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-24 sm:w-28  h-24 sm:h-28  from-zinc-50 to-zinc-200 overflow-hidden  clip">
+              <div className=" text-3xl sm:text-4xl m-auto font-bold flex items-center justify-center">
                 <span className="text-[#444337]">{timerHours}</span>
               </div>
               <small className="w-full  text-center text-zinc-900/80 font-semibold text-md sm:text-lg">
@@ -65,7 +65,7 @@ export default function CountDownTimer({ ...props }) {
               </small>
             </div>
             {/* Timer Minutes */}
-            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-28  h-28  from-zinc-50 to-zinc-200 overflow-hidden  clip">
+            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-24 sm:w-28  h-24 sm:h-28   from-zinc-50 to-zinc-200 overflow-hidden  clip">
               <div className=" text-3xl sm:text-5xl m-auto font-bold flex items-center justify-center">
                 <span className="text-[#444337]">{timerMinutes}</span>
               </div>
@@ -74,7 +74,7 @@ export default function CountDownTimer({ ...props }) {
               </small>
             </div>
             {/* Timer Second */}
-            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-28  h-28  from-zinc-50 to-zinc-200 overflow-hidden  clip">
+            <div className="text-center rounded-lg flex flex-col pb-2 shadow-lg  bg-gradient-to-tr w-24 sm:w-28  h-24 sm:h-28   from-zinc-50 to-zinc-200 overflow-hidden  clip">
               <div className=" text-3xl sm:text-5xl m-auto font-bold flex items-center justify-center">
                 <span className="text-[#444337]">{timerSeconds}</span>
               </div>

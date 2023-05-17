@@ -26,11 +26,10 @@ const SectionGallery = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             src={Orns}
             alt=""
-            width={205}
-            className="opacity-30 pb-1 "
+            className="w-[150px] sm:w[205px] "
           />
-          <h1 className="text-center py-2 text-3xl lg:text-5xl text-[#444337] ">
-            Happy <span className="text-3xl text-[#bfa95b]">Moment</span>
+          <h1 className="text-center py-2 text-2xl lg:text-3xl text-[#444337] ">
+            Happy <span className="text-2xl text-[#bfa95b]">Moment</span>
           </h1>
           <motion.img
             initial={{ y: 50, opacity: 0 }}
@@ -39,8 +38,7 @@ const SectionGallery = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             src={Orn}
             alt=""
-            width={220}
-            className="opacity-70 pt-1 "
+            className="w-[150px] sm:w[205px] pt-1 "
           />
         </div>
         <div className="w-full mb-10 sm:mb-20">

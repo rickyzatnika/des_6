@@ -15,8 +15,10 @@ const SectionProkes = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2 }}
         >
-          <h1 className="font-[Hattori] text-3xl text-[#bfa95b]  ">PROTOKOL</h1>
-          <span className="alex text-4xl text-[#444337]">kesehatan</span>
+          <h1 className="font-[Hattori] text-2xl sm:text-3xl text-[#bfa95b]  ">
+            PROTOKOL
+          </h1>
+          <span className="text-3xl sm:text-4xl text-[#444337]">kesehatan</span>
         </motion.div>
         <motion.div
           initial={{ x: 50, opacity: 0 }}
